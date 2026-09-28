@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Nibras</string>
+    <string name="app_name_arabic" translatable="false">نِبْراس</string>
+    <string name="app_tagline">A lamp for the seeker of knowledge</string>
+    <string name="developer_signature" translatable="false">M.H.M.A</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_library">Library</string>
+    <string name="nav_lectures">Lectures</string>
+    <string name="nav_more">More</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_welcome">Welcome to Nibras</string>
+    <string name="onboarding_subtitle">Choose the language you would like to use. You can change it at any time.</string>
+    <string name="onboarding_feature_1">A library of authentic books, stories and reminders</string>
+    <string name="onboarding_feature_2">Stories of the Prophets and the Companions</string>
+    <string name="onboarding_feature_3">Lectures from trusted scholars, in Arabic and English</string>
+    <string name="onboarding_continue">Continue</string>
+    <string name="lang_english" translatable="false">English</string>
+    <string name="lang_english_hint" translatable="false">Read in English</string>
+    <string name="lang_arabic" translatable="false">العربية</string>
+    <string name="lang_arabic_hint" translatable="false">اقرأ بالعربية</string>
+
+    <!-- Home -->
+    <string name="greeting">As-salamu alaykum</string>
+    <string name="greeting_sub">May your day be filled with light</string>
+    <string name="home_continue_title">Continue reading</string>
+    <string name="home_start_title">Start your journey</string>
+    <string name="home_start_sub">Pick a book and begin, one page at a time.</string>
+    <string name="home_chapter_of">Chapter %1$s of %2$s</string>
+    <string name="home_wisdom_title">Reminder of the day</string>
+    <string name="home_explore">Explore</string>
+    <string name="home_featured">Featured books</string>
+    <string name="home_lectures">Lectures</string>
+    <string name="home_see_all">See all</string>
+    <string name="home_progress_percent">%1$s%% read</string>
+
+    <!-- Library -->
+    <string name="library_title">Library</string>
+    <string name="library_search_hint">Search the whole library</string>
+    <string name="chip_all">All</string>
+    <string name="chip_saved">Saved</string>
+    <string name="library_empty_saved">No saved books yet. Tap the bookmark on any book to keep it here.</string>
+    <plurals name="chapters_count">
+        <item quantity="one">%1$s chapter</item>
+        <item quantity="other">%1$s chapters</item>
+    </plurals>
+    <string name="library_by">by %1$s</string>
+    <plurals name="books_count">
+        <item quantity="one">%1$s book</item>
+        <item quantity="other">%1$s books</item>
+    </plurals>
+
+    <!-- Book detail -->
+    <string name="book_start">Start reading</string>
+    <string name="book_continue">Continue reading</string>
+    <string name="book_read_again">Read again</string>
+    <string name="book_chapters">Chapters</string>
+    <string name="book_minutes">%1$s min read</string>
+    <string name="book_language">Reading language</string>
+    <string name="book_saved">Saved to your library</string>
+    <string name="book_unsaved">Removed from saved books</string>
+    <string name="book_finished">Finished</string>
+    <string name="book_in_progress">In progress</string>
+
+    <!-- Reader -->
+    <string name="reader_settings">Reading settings</string>
+    <string name="reader_font_size">Text size</string>
+    <string name="reader_theme">Page colour</string>
+    <string name="reader_theme_light">Light</string>
+    <string name="reader_theme_sepia">Sepia</string>
+    <string name="reader_theme_dark">Dark</string>
+    <string name="reader_keep_screen">Keep the screen on while reading</string>
+    <string name="reader_contents">Contents</string>
+    <string name="reader_next">Next chapter</string>
+    <string name="reader_finished_title">You finished this book</string>
+    <string name="reader_finished_sub">May Allah accept your effort and increase you in knowledge.</string>
+    <string name="reader_back_library">Back to the library</string>
+    <string name="reader_chapter_label">Chapter %1$s</string>
+    <string name="reader_progress">%1$s of %2$s</string>
+    <string name="reader_share_text">%1$s — from \"%2$s\" on Nibras</string>
+
+    <!-- Search -->
+    <string name="search_hint">Search titles, chapters and text</string>
+    <string name="search_empty_title">Search the whole library</string>
+    <string name="search_empty_sub">Try a topic, a name or a phrase — in Arabic or English.</string>
+    <string name="search_no_results">No results for \"%1$s\"</string>
+    <plurals name="search_results">
+        <item quantity="one">%1$s result</item>
+        <item quantity="other">%1$s results</item>
+    </plurals>
+    <string name="search_suggestions">Try</string>
+    <string name="search_suggestion_1">patience</string>
+    <string name="search_suggestion_2">Umar</string>
+    <string name="search_suggestion_3">prayer</string>
+    <string name="search_suggestion_4">forgiveness</string>
+
+    <!-- Lectures -->
+    <string name="lectures_title">Lectures</string>
+    <string name="lectures_intro">Curated official channels of well-known scholars. Videos open in YouTube.</string>
+    <string name="chip_english">English</string>
+    <string name="chip_arabic">Arabic</string>
+    <string name="chip_recitation">Recitation</string>
+    <string name="lectures_open">Open channel</string>
+    <string name="open_failed">No app on this device can open the link.</string>
+
+    <!-- More -->
+    <string name="more_title">More</string>
+    <string name="more_stats_started">Started</string>
+    <string name="more_stats_finished">Finished</string>
+    <string name="more_stats_saved">Saved</string>
+    <string name="more_section_preferences">Preferences</string>
+    <string name="more_language">Language</string>
+    <string name="more_language_system">Device language</string>
+    <string name="more_appearance">Appearance</string>
+    <string name="more_theme_system">Follow the system</string>
+    <string name="more_theme_light">Light</string>
+    <string name="more_theme_dark">Dark</string>
+    <string name="more_section_library">Library</string>
+    <string name="more_saved_books">Saved books</string>
+    <string name="more_reset_progress">Reset reading progress</string>
+    <string name="more_reset_confirm_title">Reset progress?</string>
+    <string name="more_reset_confirm_msg">Your reading positions and finished marks will be cleared. Saved books and settings are kept.</string>
+    <string name="more_reset_done">Reading progress cleared</string>
+    <string name="more_section_about">About</string>
+    <string name="more_about">About Nibras</string>
+    <string name="more_share">Share Nibras</string>
+    <string name="more_share_text">I am reading Islamic books on Nibras, a beautiful offline library app: https://play.google.com/store/apps/details?id=com.mhma.nibras</string>
+    <string name="more_rate">Rate the app</string>
+    <string name="more_licenses">Open-source licences</string>
+    <string name="more_version">Version %1$s</string>
+
+    <!-- About -->
+    <string name="about_title">About Nibras</string>
+    <string name="about_mission">Nibras is an Islamic knowledge library: authentic books, the stories of the Prophets and the Companions, daily remembrances and lectures from trusted scholars — presented with the care they deserve, in Arabic and English.</string>
+    <string name="about_feature_offline">Works completely offline</string>
+    <string name="about_feature_free">Free, with no ads and no tracking</string>
+    <string name="about_feature_bilingual">Arabic and English, side by side</string>
+    <string name="about_feature_authentic">Drawn from the Qur\'an, the authentic Sunnah and trusted scholarship</string>
+    <string name="about_made_by">Crafted with love by</string>
+    <string name="about_note">If you notice a mistake, please share it so it can be corrected. Knowledge is a trust.</string>
+    <string name="about_dua">O Allah, benefit us with what You have taught us, and teach us what benefits us.</string>
+
+    <!-- Licences -->
+    <string name="licenses_title">Open-source licences</string>
+    <string name="licenses_intro">Nibras is built with the Android framework and Kotlin only. The typefaces below are used under the SIL Open Font License, Version 1.1.</string>
+    <string name="license_amiri" translatable="false">Amiri — Khaled Hosny, The Amiri Project Authors</string>
+    <string name="license_plex" translatable="false">IBM Plex Sans Arabic — IBM Corp.</string>
+    <string name="license_lora" translatable="false">Lora — Cyreal</string>
+
+    <!-- Actions & accessibility -->
+    <string name="action_cancel">Cancel</string>
+    <string name="action_reset">Reset</string>
+    <string name="cd_back">Back</string>
+    <string name="cd_share">Share</string>
+    <string name="cd_bookmark">Save book</string>
+    <string name="cd_settings">Reading settings</string>
+    <string name="cd_contents">Contents</string>
+    <string name="cd_next">Next chapter</string>
+    <string name="cd_prev">Previous chapter</string>
+    <string name="cd_clear">Clear</string>
+    <string name="cd_decrease">Smaller text</string>
+    <string name="cd_increase">Larger text</string>
+    <string name="cd_cover">Book cover</string>
+</resources>

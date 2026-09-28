@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="?attr/nbQuoteBorder" />
+            <corners android:radius="@dimen/radius_m" />
+        </shape>
+    </item>
+    <item android:start="4dp">
+        <shape android:shape="rectangle">
+            <solid android:color="?attr/nbQuoteBackground" />
+            <corners android:radius="@dimen/radius_m" />
+        </shape>
+    </item>
+</layer-list>

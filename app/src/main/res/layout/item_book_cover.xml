@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="118dp"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="14dp"
+    android:background="@drawable/bg_row"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:padding="4dp">
+
+    <com.mhma.nibras.ui.widget.CoverView
+        android:id="@+id/cover_art"
+        android:layout_width="match_parent"
+        android:layout_height="156dp"
+        android:contentDescription="@string/cd_cover" />
+
+    <TextView
+        android:id="@+id/cover_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/plex_semibold"
+        android:maxLines="2"
+        android:textColor="?attr/nbTextPrimary"
+        android:textSize="13.5sp" />
+
+    <TextView
+        android:id="@+id/cover_meta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textAppearance="@style/TextAppearance.Nibras.Caption" />
+</LinearLayout>

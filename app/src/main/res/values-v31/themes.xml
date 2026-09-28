@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Android 12+ system splash screen branding. -->
+    <style name="Theme.Nibras" parent="Theme.Nibras.Base">
+        <item name="android:windowSplashScreenBackground">@color/emerald_800</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_splash</item>
+        <item name="android:windowSplashScreenIconBackgroundColor">@color/emerald_700</item>
+    </style>
+</resources>

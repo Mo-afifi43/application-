@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Semantic colour roles of the Nibras design system. Every role is defined
+         in both the light theme (values/themes.xml) and the dark theme
+         (values-night/themes.xml) so layouts and drawables can reference
+         them with ?attr/… and adapt automatically. -->
+    <attr name="nbBackground" format="color" />
+    <attr name="nbSurface" format="color" />
+    <attr name="nbSurfaceVariant" format="color" />
+    <attr name="nbPrimary" format="color" />
+    <attr name="nbOnPrimary" format="color" />
+    <attr name="nbPrimaryContainer" format="color" />
+    <attr name="nbOnPrimaryContainer" format="color" />
+    <attr name="nbAccent" format="color" />
+    <attr name="nbAccentSoft" format="color" />
+    <attr name="nbTextPrimary" format="color" />
+    <attr name="nbTextSecondary" format="color" />
+    <attr name="nbTextMuted" format="color" />
+    <attr name="nbDivider" format="color" />
+    <attr name="nbCardStroke" format="color" />
+    <attr name="nbQuoteBackground" format="color" />
+    <attr name="nbQuoteBorder" format="color" />
+    <attr name="nbNavBackground" format="color" />
+    <attr name="nbRipple" format="color" />
+    <attr name="nbHeroStart" format="color" />
+    <attr name="nbHeroEnd" format="color" />
+    <attr name="nbScrim" format="color" />
+
+    <!-- Geometric pattern overlay used on hero surfaces. -->
+    <declare-styleable name="PatternView">
+        <attr name="patternColor" format="color" />
+        <attr name="patternAlpha" format="float" />
+        <attr name="patternCell" format="dimension" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Light theme. The dark variant lives in values-night/themes.xml and the
+         Android 12+ splash screen additions in values-v31/themes.xml. -->
+    <style name="Theme.Nibras.Base" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/ivory_50</item>
+        <item name="android:colorPrimary">@color/emerald_700</item>
+        <item name="android:colorPrimaryDark">@color/emerald_800</item>
+        <item name="android:colorAccent">@color/emerald_600</item>
+        <item name="android:colorControlActivated">@color/emerald_600</item>
+        <item name="android:colorControlNormal">@color/ink_600</item>
+        <item name="android:colorControlHighlight">@color/ripple_light</item>
+        <item name="android:colorEdgeEffect">@color/emerald_600</item>
+        <item name="android:textColorPrimary">@color/ink_900</item>
+        <item name="android:textColorSecondary">@color/ink_600</item>
+        <item name="android:textColorTertiary">@color/ink_400</item>
+        <item name="android:textColorHint">@color/ink_400</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowAnimationStyle">@style/Animation.Nibras.Activity</item>
+        <item name="android:textViewStyle">@style/Widget.Nibras.TextView</item>
+        <item name="android:buttonStyle">@style/Widget.Nibras.Button</item>
+        <item name="android:editTextStyle">@style/Widget.Nibras.EditText</item>
+        <item name="android:alertDialogTheme">@style/Theme.Nibras.Dialog</item>
+
+        <item name="nbBackground">@color/ivory_50</item>
+        <item name="nbSurface">@color/white</item>
+        <item name="nbSurfaceVariant">@color/ivory_100</item>
+        <item name="nbPrimary">@color/emerald_700</item>
+        <item name="nbOnPrimary">@color/white</item>
+        <item name="nbPrimaryContainer">@color/emerald_100</item>
+        <item name="nbOnPrimaryContainer">@color/emerald_900</item>
+        <item name="nbAccent">@color/gold_500</item>
+        <item name="nbAccentSoft">@color/gold_50</item>
+        <item name="nbTextPrimary">@color/ink_900</item>
+        <item name="nbTextSecondary">@color/ink_600</item>
+        <item name="nbTextMuted">@color/ink_400</item>
+        <item name="nbDivider">@color/line_200</item>
+        <item name="nbCardStroke">@color/line_100</item>
+        <item name="nbQuoteBackground">@color/gold_50</item>
+        <item name="nbQuoteBorder">@color/gold_500</item>
+        <item name="nbNavBackground">@color/white</item>
+        <item name="nbRipple">@color/ripple_light</item>
+        <item name="nbHeroStart">@color/emerald_800</item>
+        <item name="nbHeroEnd">@color/emerald_600</item>
+        <item name="nbScrim">@color/scrim_light</item>
+    </style>
+
+    <style name="Theme.Nibras" parent="Theme.Nibras.Base" />
+
+    <!-- Alert dialogs -->
+    <style name="Theme.Nibras.Dialog" parent="android:Theme.Material.Light.Dialog.Alert">
+        <item name="android:colorAccent">@color/emerald_600</item>
+        <item name="android:colorPrimary">@color/emerald_700</item>
+        <item name="android:textColorPrimary">@color/ink_900</item>
+        <item name="android:textColorSecondary">@color/ink_600</item>
+        <item name="android:windowBackground">@drawable/bg_dialog</item>
+        <item name="android:textViewStyle">@style/Widget.Nibras.TextView</item>
+        <item name="android:buttonBarButtonStyle">@style/Widget.Nibras.DialogButton</item>
+        <item name="nbBackground">@color/ivory_50</item>
+        <item name="nbSurface">@color/white</item>
+        <item name="nbSurfaceVariant">@color/ivory_100</item>
+        <item name="nbPrimary">@color/emerald_700</item>
+        <item name="nbOnPrimary">@color/white</item>
+        <item name="nbPrimaryContainer">@color/emerald_100</item>
+        <item name="nbOnPrimaryContainer">@color/emerald_900</item>
+        <item name="nbAccent">@color/gold_500</item>
+        <item name="nbAccentSoft">@color/gold_50</item>
+        <item name="nbTextPrimary">@color/ink_900</item>
+        <item name="nbTextSecondary">@color/ink_600</item>
+        <item name="nbTextMuted">@color/ink_400</item>
+        <item name="nbDivider">@color/line_200</item>
+        <item name="nbCardStroke">@color/line_100</item>
+        <item name="nbQuoteBackground">@color/gold_50</item>
+        <item name="nbQuoteBorder">@color/gold_500</item>
+        <item name="nbNavBackground">@color/white</item>
+        <item name="nbRipple">@color/ripple_light</item>
+        <item name="nbHeroStart">@color/emerald_800</item>
+        <item name="nbHeroEnd">@color/emerald_600</item>
+        <item name="nbScrim">@color/scrim_light</item>
+    </style>
+
+    <!-- Bottom sheets (language picker, appearance picker, reader settings) -->
+    <style name="Theme.Nibras.Sheet" parent="android:Theme.Material.Light.Dialog.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.45</item>
+        <item name="android:windowAnimationStyle">@style/Animation.Nibras.Sheet</item>
+        <item name="android:colorAccent">@color/emerald_600</item>
+        <item name="android:colorControlActivated">@color/emerald_600</item>
+        <item name="android:textColorPrimary">@color/ink_900</item>
+        <item name="android:textColorSecondary">@color/ink_600</item>
+        <item name="android:textViewStyle">@style/Widget.Nibras.TextView</item>
+        <item name="nbBackground">@color/ivory_50</item>
+        <item name="nbSurface">@color/white</item>
+        <item name="nbSurfaceVariant">@color/ivory_100</item>
+        <item name="nbPrimary">@color/emerald_700</item>
+        <item name="nbOnPrimary">@color/white</item>
+        <item name="nbPrimaryContainer">@color/emerald_100</item>
+        <item name="nbOnPrimaryContainer">@color/emerald_900</item>
+        <item name="nbAccent">@color/gold_500</item>
+        <item name="nbAccentSoft">@color/gold_50</item>
+        <item name="nbTextPrimary">@color/ink_900</item>
+        <item name="nbTextSecondary">@color/ink_600</item>
+        <item name="nbTextMuted">@color/ink_400</item>
+        <item name="nbDivider">@color/line_200</item>
+        <item name="nbCardStroke">@color/line_100</item>
+        <item name="nbQuoteBackground">@color/gold_50</item>
+        <item name="nbQuoteBorder">@color/gold_500</item>
+        <item name="nbNavBackground">@color/white</item>
+        <item name="nbRipple">@color/ripple_light</item>
+        <item name="nbHeroStart">@color/emerald_800</item>
+        <item name="nbHeroEnd">@color/emerald_600</item>
+        <item name="nbScrim">@color/scrim_light</item>
+    </style>
+</resources>

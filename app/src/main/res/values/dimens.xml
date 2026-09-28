@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card_radius">20dp</dimen>
+    <dimen name="radius_m">14dp</dimen>
+    <dimen name="cover_thumb_width">64dp</dimen>
+    <dimen name="cover_thumb_height">90dp</dimen>
+    <dimen name="reader_max_width">640dp</dimen>
+    <!-- Tracking for small labels. Arabic script must never be letter-spaced
+         (it breaks the joined letter forms), so values-ar sets this to 0. -->
+    <item name="label_letter_spacing" type="dimen" format="float">0.06</item>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.Nibras.Row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="56dp"
+    android:paddingStart="10dp"
+    android:paddingEnd="12dp">
+
+    <TextView
+        android:id="@+id/chapter_number"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:background="@drawable/bg_circle_surface_variant"
+        android:fontFamily="@font/plex_semibold"
+        android:gravity="center"
+        android:textColor="?attr/nbPrimary"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/chapter_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_weight="1"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textAppearance="@style/TextAppearance.Nibras.Subtitle" />
+
+    <ImageView
+        android:id="@+id/chapter_state"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_check_circle"
+        android:tint="?attr/nbPrimary"
+        android:visibility="gone" />
+</LinearLayout>

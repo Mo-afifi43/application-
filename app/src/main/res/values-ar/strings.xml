@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">نبراس</string>
+    <string name="app_tagline">نبراسٌ لطالب العلم</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">الرئيسية</string>
+    <string name="nav_library">المكتبة</string>
+    <string name="nav_lectures">المحاضرات</string>
+    <string name="nav_more">المزيد</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_welcome">مرحبًا بك في نبراس</string>
+    <string name="onboarding_subtitle">اختر اللغة التي تودّ استخدامها. يمكنك تغييرها في أي وقت.</string>
+    <string name="onboarding_feature_1">مكتبة من الكتب والقصص والتذكيرات الموثوقة</string>
+    <string name="onboarding_feature_2">قصص الأنبياء والصحابة</string>
+    <string name="onboarding_feature_3">محاضرات لعلماء موثوقين بالعربية والإنجليزية</string>
+    <string name="onboarding_continue">متابعة</string>
+
+    <!-- Home -->
+    <string name="greeting">السلام عليكم</string>
+    <string name="greeting_sub">نسأل الله أن يملأ يومك نورًا</string>
+    <string name="home_continue_title">تابع القراءة</string>
+    <string name="home_start_title">ابدأ رحلتك</string>
+    <string name="home_start_sub">اختر كتابًا وابدأ، صفحةً بعد صفحة.</string>
+    <string name="home_chapter_of">الفصل %1$s من %2$s</string>
+    <string name="home_wisdom_title">تذكرة اليوم</string>
+    <string name="home_explore">استكشف</string>
+    <string name="home_featured">كتب مختارة</string>
+    <string name="home_lectures">المحاضرات</string>
+    <string name="home_see_all">عرض الكل</string>
+    <string name="home_progress_percent">قرأت %1$s%%</string>
+
+    <!-- Library -->
+    <string name="library_title">المكتبة</string>
+    <string name="library_search_hint">ابحث في المكتبة كلها</string>
+    <string name="chip_all">الكل</string>
+    <string name="chip_saved">المحفوظة</string>
+    <string name="library_empty_saved">لا توجد كتب محفوظة بعد. اضغط على علامة الحفظ في أي كتاب لتجده هنا.</string>
+    <plurals name="chapters_count">
+        <item quantity="zero">%1$s فصول</item>
+        <item quantity="one">فصل واحد</item>
+        <item quantity="two">فصلان</item>
+        <item quantity="few">%1$s فصول</item>
+        <item quantity="many">%1$s فصلًا</item>
+        <item quantity="other">%1$s فصل</item>
+    </plurals>
+    <string name="library_by">بقلم %1$s</string>
+    <plurals name="books_count">
+        <item quantity="zero">%1$s كتب</item>
+        <item quantity="one">كتاب واحد</item>
+        <item quantity="two">كتابان</item>
+        <item quantity="few">%1$s كتب</item>
+        <item quantity="many">%1$s كتابًا</item>
+        <item quantity="other">%1$s كتاب</item>
+    </plurals>
+
+    <!-- Book detail -->
+    <string name="book_start">ابدأ القراءة</string>
+    <string name="book_continue">تابع القراءة</string>
+    <string name="book_read_again">اقرأ مرة أخرى</string>
+    <string name="book_chapters">الفصول</string>
+    <string name="book_minutes">%1$s دقيقة قراءة</string>
+    <string name="book_language">لغة القراءة</string>
+    <string name="book_saved">حُفظ الكتاب في مكتبتك</string>
+    <string name="book_unsaved">أُزيل الكتاب من المحفوظات</string>
+    <string name="book_finished">مكتمل</string>
+    <string name="book_in_progress">قيد القراءة</string>
+
+    <!-- Reader -->
+    <string name="reader_settings">إعدادات القراءة</string>
+    <string name="reader_font_size">حجم الخط</string>
+    <string name="reader_theme">لون الصفحة</string>
+    <string name="reader_theme_light">فاتح</string>
+    <string name="reader_theme_sepia">ورقي</string>
+    <string name="reader_theme_dark">داكن</string>
+    <string name="reader_keep_screen">إبقاء الشاشة مضاءة أثناء القراءة</string>
+    <string name="reader_contents">الفهرس</string>
+    <string name="reader_next">الفصل التالي</string>
+    <string name="reader_finished_title">أتممت هذا الكتاب</string>
+    <string name="reader_finished_sub">تقبّل الله منك، وزادك علمًا ونورًا.</string>
+    <string name="reader_back_library">العودة إلى المكتبة</string>
+    <string name="reader_chapter_label">الفصل %1$s</string>
+    <string name="reader_progress">%1$s من %2$s</string>
+    <string name="reader_share_text">%1$s — من كتاب \"%2$s\" في تطبيق نبراس</string>
+
+    <!-- Search -->
+    <string name="search_hint">ابحث في العناوين والفصول والنصوص</string>
+    <string name="search_empty_title">ابحث في المكتبة كلها</string>
+    <string name="search_empty_sub">جرّب موضوعًا أو اسمًا أو عبارة، بالعربية أو الإنجليزية.</string>
+    <string name="search_no_results">لا توجد نتائج لـ \"%1$s\"</string>
+    <plurals name="search_results">
+        <item quantity="zero">لا نتائج</item>
+        <item quantity="one">نتيجة واحدة</item>
+        <item quantity="two">نتيجتان</item>
+        <item quantity="few">%1$s نتائج</item>
+        <item quantity="many">%1$s نتيجة</item>
+        <item quantity="other">%1$s نتيجة</item>
+    </plurals>
+    <string name="search_suggestions">جرّب</string>
+    <string name="search_suggestion_1">الصبر</string>
+    <string name="search_suggestion_2">عمر</string>
+    <string name="search_suggestion_3">الصلاة</string>
+    <string name="search_suggestion_4">المغفرة</string>
+
+    <!-- Lectures -->
+    <string name="lectures_title">المحاضرات</string>
+    <string name="lectures_intro">قنوات رسمية مختارة لعلماء معروفين. تُفتح المقاطع في يوتيوب.</string>
+    <string name="chip_english">الإنجليزية</string>
+    <string name="chip_arabic">العربية</string>
+    <string name="chip_recitation">تلاوة</string>
+    <string name="lectures_open">فتح القناة</string>
+    <string name="open_failed">لا يوجد تطبيق على هذا الجهاز يمكنه فتح الرابط.</string>
+
+    <!-- More -->
+    <string name="more_title">المزيد</string>
+    <string name="more_stats_started">بدأتها</string>
+    <string name="more_stats_finished">أتممتها</string>
+    <string name="more_stats_saved">محفوظة</string>
+    <string name="more_section_preferences">التفضيلات</string>
+    <string name="more_language">اللغة</string>
+    <string name="more_language_system">لغة الجهاز</string>
+    <string name="more_appearance">المظهر</string>
+    <string name="more_theme_system">حسب النظام</string>
+    <string name="more_theme_light">فاتح</string>
+    <string name="more_theme_dark">داكن</string>
+    <string name="more_section_library">المكتبة</string>
+    <string name="more_saved_books">الكتب المحفوظة</string>
+    <string name="more_reset_progress">إعادة ضبط تقدم القراءة</string>
+    <string name="more_reset_confirm_title">إعادة ضبط التقدم؟</string>
+    <string name="more_reset_confirm_msg">ستُمسح مواضع القراءة وعلامات الإتمام. تبقى الكتب المحفوظة والإعدادات كما هي.</string>
+    <string name="more_reset_done">تم مسح تقدم القراءة</string>
+    <string name="more_section_about">حول التطبيق</string>
+    <string name="more_about">عن نبراس</string>
+    <string name="more_share">مشاركة نبراس</string>
+    <string name="more_share_text">أقرأ كتبًا إسلامية في تطبيق نبراس، مكتبة جميلة تعمل دون إنترنت: https://play.google.com/store/apps/details?id=com.mhma.nibras</string>
+    <string name="more_rate">تقييم التطبيق</string>
+    <string name="more_licenses">تراخيص المصادر المفتوحة</string>
+    <string name="more_version">الإصدار %1$s</string>
+
+    <!-- About -->
+    <string name="about_title">عن نبراس</string>
+    <string name="about_mission">نبراس مكتبة للمعرفة الإسلامية: كتب موثوقة، وقصص الأنبياء والصحابة، وأذكار يومية، ومحاضرات لعلماء موثوقين، تُقدَّم بالعناية التي تستحقها، بالعربية والإنجليزية.</string>
+    <string name="about_feature_offline">يعمل دون اتصال بالإنترنت</string>
+    <string name="about_feature_free">مجاني، بلا إعلانات ولا تتبّع</string>
+    <string name="about_feature_bilingual">العربية والإنجليزية جنبًا إلى جنب</string>
+    <string name="about_feature_authentic">مستمد من القرآن والسنة الصحيحة وعلم موثوق</string>
+    <string name="about_made_by">صُنع بحب بواسطة</string>
+    <string name="about_note">إن لاحظت خطأً فشاركنا به ليُصحَّح، فالعلم أمانة.</string>
+    <string name="about_dua">اللهم انفعنا بما علّمتنا، وعلّمنا ما ينفعنا.</string>
+
+    <!-- Licences -->
+    <string name="licenses_title">تراخيص المصادر المفتوحة</string>
+    <string name="licenses_intro">بُني نبراس على إطار أندرويد ولغة كوتلن فقط. تُستخدم الخطوط التالية بموجب رخصة SIL للخطوط المفتوحة، الإصدار 1.1.</string>
+
+    <!-- Actions & accessibility -->
+    <string name="action_cancel">إلغاء</string>
+    <string name="action_reset">إعادة ضبط</string>
+    <string name="cd_back">رجوع</string>
+    <string name="cd_share">مشاركة</string>
+    <string name="cd_bookmark">حفظ الكتاب</string>
+    <string name="cd_settings">إعدادات القراءة</string>
+    <string name="cd_contents">الفهرس</string>
+    <string name="cd_next">الفصل التالي</string>
+    <string name="cd_prev">الفصل السابق</string>
+    <string name="cd_clear">مسح</string>
+    <string name="cd_decrease">تصغير الخط</string>
+    <string name="cd_increase">تكبير الخط</string>
+    <string name="cd_cover">غلاف الكتاب</string>
+</resources>

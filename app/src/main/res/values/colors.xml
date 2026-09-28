@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Warm neutrals (light theme) -->
+    <color name="ivory_50">#FBF9F4</color>
+    <color name="ivory_100">#F4F0E6</color>
+    <color name="white">#FFFFFF</color>
+    <color name="line_100">#EFEAE0</color>
+    <color name="line_200">#E3DDCF</color>
+    <color name="ink_900">#1A1F1D</color>
+    <color name="ink_600">#5B6461</color>
+    <color name="ink_400">#8A928F</color>
+
+    <!-- Emerald -->
+    <color name="emerald_900">#06382C</color>
+    <color name="emerald_800">#0A4A3B</color>
+    <color name="emerald_700">#0E5A48</color>
+    <color name="emerald_600">#157A62</color>
+    <color name="emerald_100">#DCEFE8</color>
+
+    <!-- Gold -->
+    <color name="gold_700">#A8842F</color>
+    <color name="gold_500">#C9A24B</color>
+    <color name="gold_400">#D8B761</color>
+    <color name="gold_200">#EBD9A8</color>
+    <color name="gold_50">#FBF4E2</color>
+
+    <!-- Night neutrals (dark theme) -->
+    <color name="night_950">#0B1412</color>
+    <color name="night_900">#121D1A</color>
+    <color name="night_800">#1A2926</color>
+    <color name="night_700">#22342F</color>
+    <color name="night_600">#2C423C</color>
+    <color name="mint_400">#57BFA0</color>
+    <color name="mint_900">#0E3B30</color>
+    <color name="mint_100">#CFF0E4</color>
+    <color name="snow_100">#EDF1EF</color>
+    <color name="snow_400">#A9B4AF</color>
+    <color name="snow_600">#7A857F</color>
+
+    <!-- Ripples & scrims -->
+    <color name="ripple_light">#1F0E5A48</color>
+    <color name="ripple_dark">#2E7FD1B8</color>
+    <color name="ripple_on_primary">#33FFFFFF</color>
+    <color name="scrim_light">#66000000</color>
+    <color name="scrim_dark">#99000000</color>
+    <color name="white_20">#33FFFFFF</color>
+    <color name="white_60">#99FFFFFF</color>
+    <color name="white_85">#D9FFFFFF</color>
+
+    <!-- Reader palettes -->
+    <color name="reader_light_bg">#FBF9F4</color>
+    <color name="reader_light_text">#1F2422</color>
+    <color name="reader_light_muted">#6A716E</color>
+    <color name="reader_light_quote">#F1ECDF</color>
+    <color name="reader_sepia_bg">#F3E9D2</color>
+    <color name="reader_sepia_text">#3A2F1E</color>
+    <color name="reader_sepia_muted">#7C6A4E</color>
+    <color name="reader_sepia_quote">#EADFC3</color>
+    <color name="reader_sepia_bar">#EEE3CA</color>
+    <color name="reader_dark_bg">#111514</color>
+    <color name="reader_dark_text">#E4E8E6</color>
+    <color name="reader_dark_muted">#98A39E</color>
+    <color name="reader_dark_quote">#1B2321</color>
+
+    <!-- Cover art palettes (start, end) -->
+    <color name="cover_0_a">#0E5A48</color>
+    <color name="cover_0_b">#1E9678</color>
+    <color name="cover_1_a">#7A4E0E</color>
+    <color name="cover_1_b">#C9A24B</color>
+    <color name="cover_2_a">#22305E</color>
+    <color name="cover_2_b">#4E63AD</color>
+    <color name="cover_3_a">#6B1F2F</color>
+    <color name="cover_3_b">#B24A60</color>
+    <color name="cover_4_a">#0F5262</color>
+    <color name="cover_4_b">#2C8CA0</color>
+    <color name="cover_5_a">#472A5E</color>
+    <color name="cover_5_b">#8A5AA8</color>
+    <color name="cover_6_a">#8A3A1D</color>
+    <color name="cover_6_b">#D27C4F</color>
+    <color name="cover_7_a">#2B3C46</color>
+    <color name="cover_7_b">#5E7B8B</color>
+</resources>

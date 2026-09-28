@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/detail_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/nbBackground">
+
+    <ScrollView
+        android:id="@+id/detail_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/detail_hero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.mhma.nibras.ui.widget.PatternView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:patternAlpha="0.10"
+                    app:patternCell="64dp"
+                    app:patternColor="@color/white" />
+
+                <com.mhma.nibras.ui.widget.CoverView
+                    android:id="@+id/detail_cover"
+                    android:layout_width="152dp"
+                    android:layout_height="214dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="72dp"
+                    android:layout_marginBottom="28dp"
+                    android:contentDescription="@string/cd_cover"
+                    android:elevation="12dp" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="20dp"
+                android:paddingTop="22dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="24dp">
+
+                <TextView
+                    android:id="@+id/detail_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.Nibras.Label" />
+
+                <TextView
+                    android:id="@+id/detail_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textAppearance="@style/TextAppearance.Nibras.Headline"
+                    android:textSize="27sp" />
+
+                <TextView
+                    android:id="@+id/detail_author"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textAppearance="@style/TextAppearance.Nibras.BodySecondary" />
+
+                <TextView
+                    android:id="@+id/detail_meta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:textAppearance="@style/TextAppearance.Nibras.Caption" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/book_language"
+                    android:textAppearance="@style/TextAppearance.Nibras.Caption" />
+
+                <LinearLayout
+                    android:id="@+id/detail_lang_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/bg_segment_group"
+                    android:orientation="horizontal"
+                    android:padding="4dp">
+
+                    <TextView
+                        android:id="@+id/seg_en"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_segment"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:fontFamily="@font/plex_semibold"
+                        android:gravity="center"
+                        android:text="@string/lang_english"
+                        android:textColor="@color/segment_text"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/seg_ar"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_segment"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:fontFamily="@font/plex_semibold"
+                        android:gravity="center"
+                        android:text="@string/lang_arabic"
+                        android:textColor="@color/segment_text"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/detail_read"
+                        style="@style/Widget.Nibras.PrimaryButton"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/book_start" />
+
+                    <ImageView
+                        android:id="@+id/detail_bookmark"
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/bg_button_tonal"
+                        android:clickable="true"
+                        android:contentDescription="@string/cd_bookmark"
+                        android:focusable="true"
+                        android:padding="14dp"
+                        android:src="@drawable/ic_bookmark_outline"
+                        android:tint="?attr/nbOnPrimaryContainer" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/detail_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:lineSpacingMultiplier="1.35"
+                    android:textAppearance="@style/TextAppearance.Nibras.Body"
+                    android:textSize="15.5sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="26dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/book_chapters"
+                    android:textAppearance="@style/TextAppearance.Nibras.SectionTitle" />
+
+                <LinearLayout
+                    android:id="@+id/detail_chapters"
+                    style="@style/Widget.Nibras.Card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="6dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/detail_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="8dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="8dp">
+
+        <ImageView
+            android:id="@+id/detail_back"
+            style="@style/Widget.Nibras.IconButton"
+            android:background="@drawable/bg_icon_button_on_hero"
+            android:contentDescription="@string/cd_back"
+            android:src="@drawable/ic_arrow_back"
+            android:tint="@color/white" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/detail_share"
+            style="@style/Widget.Nibras.IconButton"
+            android:background="@drawable/bg_icon_button_on_hero"
+            android:contentDescription="@string/cd_share"
+            android:src="@drawable/ic_share"
+            android:tint="@color/white" />
+    </LinearLayout>
+</FrameLayout>
