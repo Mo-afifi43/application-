@@ -20,6 +20,7 @@ import com.mhma.nibras.core.onClickDebounced
 import com.mhma.nibras.core.padSystemBars
 import com.mhma.nibras.ui.AboutActivity
 import com.mhma.nibras.ui.Binders
+import com.mhma.nibras.ui.ClassicalLibraryActivity
 import com.mhma.nibras.ui.LicensesActivity
 import com.mhma.nibras.ui.MainActivity
 import com.mhma.nibras.ui.Screen
@@ -42,6 +43,7 @@ class MoreScreen(activity: MainActivity, container: ViewGroup) : Screen(activity
         bindRow(rowLanguage, R.drawable.ic_language, R.string.more_language)
         bindRow(rowAppearance, R.drawable.ic_palette, R.string.more_appearance)
         bindRow(root.findViewById(R.id.row_saved), R.drawable.ic_bookmark_filled, R.string.more_saved_books)
+        bindRow(root.findViewById(R.id.row_classical), R.drawable.ic_library, R.string.classical_title)
         bindRow(root.findViewById(R.id.row_reset), R.drawable.ic_refresh, R.string.more_reset_progress)
         bindRow(root.findViewById(R.id.row_about), R.drawable.ic_info, R.string.more_about)
         bindRow(root.findViewById(R.id.row_share), R.drawable.ic_share, R.string.more_share)
@@ -54,6 +56,9 @@ class MoreScreen(activity: MainActivity, container: ViewGroup) : Screen(activity
         rowAppearance.onClickDebounced { showAppearancePicker() }
         root.findViewById<View>(R.id.row_saved).onClickDebounced {
             activity.openLibrary(LibraryScreen.FILTER_SAVED)
+        }
+        root.findViewById<View>(R.id.row_classical).onClickDebounced {
+            ClassicalLibraryActivity.start(activity)
         }
         root.findViewById<View>(R.id.row_reset).onClickDebounced { confirmReset() }
         root.findViewById<View>(R.id.row_about).onClickDebounced {

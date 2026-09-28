@@ -112,6 +112,19 @@
     <string name="lectures_open">فتح القناة</string>
     <string name="open_failed">لا يوجد تطبيق على هذا الجهاز يمكنه فتح الرابط.</string>
 
+    <!-- Classical library -->
+    <string name="classical_title">المكتبة التراثية</string>
+    <string name="classical_hero_title">مكتبة التراث</string>
+    <string name="classical_hero_sub">أمهات كتب العلماء: صحيح البخاري ورياض الصالحين وتفسير ابن كثير وغيرها، تُقرأ كاملةً ومجانًا على موقع جامع الكتب الإسلامية. تُفتح الكتب في المتصفح.</string>
+    <string name="classical_quran">القرآن الكريم</string>
+    <string name="classical_narrators">رواة الحديث</string>
+    <string name="classical_read_online">اقرأ عبر الإنترنت</string>
+    <string name="classical_footer">تُستضاف النصوص على موقع جامع الكتب الإسلامية (ketabonline.com)، مكتبة رقمية مجانية تضم أكثر من ٢٩ ألف كتاب إسلامي. يلزم الاتصال بالإنترنت.</string>
+    <string name="classical_home_label">اقرأ عبر الإنترنت</string>
+    <string name="classical_home_sub">صحيح البخاري ورياض الصالحين وأمهات كتب العلماء، كاملةً.</string>
+    <string name="library_classical_sub">صحيح البخاري وتفسير ابن كثير وسير أعلام النبلاء وغيرها، تُقرأ عبر الإنترنت</string>
+    <string name="library_classical_category">كتب التراث في %1$s، تُقرأ عبر الإنترنت</string>
+
     <!-- More -->
     <string name="more_title">المزيد</string>
     <string name="more_stats_started">بدأتها</string>
@@ -145,6 +158,9 @@
     <string name="about_feature_free">مجاني، بلا إعلانات ولا تتبّع</string>
     <string name="about_feature_bilingual">العربية والإنجليزية جنبًا إلى جنب</string>
     <string name="about_feature_authentic">مستمد من القرآن والسنة الصحيحة وعلم موثوق</string>
+    <string name="about_sources_title">المصادر</string>
+    <string name="about_sources_text">تفتح المكتبة التراثية أمهات كتب العلماء على موقع جامع الكتب الإسلامية (ketabonline.com)، وهو مكتبة رقمية مجانية للكتب الإسلامية. وقد رُوجع نص الأربعين النووية في نبراس على نسخته المحققة.</string>
+    <string name="about_sources_open">زيارة موقع جامع الكتب الإسلامية</string>
     <string name="about_made_by">صُنع بحب بواسطة</string>
     <string name="about_note">إن لاحظت خطأً فشاركنا به ليُصحَّح، فالعلم أمانة.</string>
     <string name="about_dua">اللهم انفعنا بما علّمتنا، وعلّمنا ما ينفعنا.</string>

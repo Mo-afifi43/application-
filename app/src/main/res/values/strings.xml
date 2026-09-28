@@ -106,6 +106,19 @@
     <string name="lectures_open">Open channel</string>
     <string name="open_failed">No app on this device can open the link.</string>
 
+    <!-- Classical library (works read online on Jami' al-Kutub al-Islamiyya) -->
+    <string name="classical_title">Classical library</string>
+    <string name="classical_hero_title">The classical library</string>
+    <string name="classical_hero_sub">The great works of the scholars — Sahih al-Bukhari, Riyad al-Salihin, Tafsir Ibn Kathir and more — read in full and for free on Jami\' al-Kutub al-Islamiyya. Books open in your browser, in Arabic.</string>
+    <string name="classical_quran">The Noble Qur\'an</string>
+    <string name="classical_narrators">Hadith narrators</string>
+    <string name="classical_read_online">Read online · Arabic</string>
+    <string name="classical_footer">Texts are hosted by Jami\' al-Kutub al-Islamiyya (ketabonline.com), a free digital library of more than 29,000 Islamic books. An internet connection is needed.</string>
+    <string name="classical_home_label">Read online</string>
+    <string name="classical_home_sub">Sahih al-Bukhari, Riyad al-Salihin and the great works of the scholars, in full.</string>
+    <string name="library_classical_sub">Sahih al-Bukhari, Tafsir Ibn Kathir, Siyar A\'lam al-Nubala\' and more, read online</string>
+    <string name="library_classical_category">Classical works on %1$s, read online</string>
+
     <!-- More -->
     <string name="more_title">More</string>
     <string name="more_stats_started">Started</string>
@@ -139,6 +152,9 @@
     <string name="about_feature_free">Free, with no ads and no tracking</string>
     <string name="about_feature_bilingual">Arabic and English, side by side</string>
     <string name="about_feature_authentic">Drawn from the Qur\'an, the authentic Sunnah and trusted scholarship</string>
+    <string name="about_sources_title">Sources</string>
+    <string name="about_sources_text">The classical library opens the great works of the scholars on Jami\' al-Kutub al-Islamiyya (ketabonline.com), a free digital library of Islamic books. The text of the Forty Hadith in Nibras was checked against its digitised edition.</string>
+    <string name="about_sources_open">Visit ketabonline.com</string>
     <string name="about_made_by">Crafted with love by</string>
     <string name="about_note">If you notice a mistake, please share it so it can be corrected. Knowledge is a trust.</string>
     <string name="about_dua">O Allah, benefit us with what You have taught us, and teach us what benefits us.</string>

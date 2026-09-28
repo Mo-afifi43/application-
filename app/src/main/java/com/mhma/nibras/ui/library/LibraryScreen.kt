@@ -13,11 +13,13 @@ import com.mhma.nibras.NibrasApp
 import com.mhma.nibras.R
 import com.mhma.nibras.content.Book
 import com.mhma.nibras.content.Lang
+import com.mhma.nibras.content.OnlineLibrary
 import com.mhma.nibras.core.LocaleHelper
 import com.mhma.nibras.core.onClickDebounced
 import com.mhma.nibras.core.padSystemBars
 import com.mhma.nibras.ui.Binders
 import com.mhma.nibras.ui.BookDetailActivity
+import com.mhma.nibras.ui.ClassicalLibraryActivity
 import com.mhma.nibras.ui.MainActivity
 import com.mhma.nibras.ui.Screen
 import com.mhma.nibras.ui.SearchActivity
@@ -36,6 +38,8 @@ class LibraryScreen(activity: MainActivity, container: ViewGroup) : Screen(activ
     private val list: LinearLayout = root.findViewById(R.id.library_list)
     private val empty: TextView = root.findViewById(R.id.library_empty)
     private val scroll: ScrollView = root.findViewById(R.id.library_scroll)
+    private val classicalCard: View = root.findViewById(R.id.library_classical)
+    private val classicalSub: TextView = root.findViewById(R.id.library_classical_sub)
 
     /** null = all books, [FILTER_SAVED] = bookmarks, otherwise a category id. */
     private var filter: String? = null
@@ -84,7 +88,23 @@ class LibraryScreen(activity: MainActivity, container: ViewGroup) : Screen(activ
         for ((id, chip) in chips) chip.isSelected = id == filter
     }
 
+    /**
+     * The classical-library card follows the active filter: inside a category
+     * that has classical works it points straight at them.
+     */
+    private fun bindClassicalCard() {
+        val category = filter?.takeIf { it != FILTER_SAVED }?.let { repo.category(it) }
+        val target = category?.takeIf { OnlineLibrary.itemsIn(it.id).isNotEmpty() }
+        classicalSub.text = if (target != null) {
+            activity.getString(R.string.library_classical_category, target.title.get(lang))
+        } else {
+            activity.getString(R.string.library_classical_sub)
+        }
+        classicalCard.onClickDebounced { ClassicalLibraryActivity.start(activity, target?.id) }
+    }
+
     private fun render() {
+        bindClassicalCard()
         val books: List<Book> = when (val f = filter) {
             null -> repo.books
             FILTER_SAVED -> {

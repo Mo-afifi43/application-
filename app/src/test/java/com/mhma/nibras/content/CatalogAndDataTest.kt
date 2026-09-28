@@ -74,6 +74,37 @@ class CatalogAndDataTest {
     }
 
     @Test
+    fun onlineLibraryEntriesAreValidAndCoverEveryCategory() {
+        assertTrue(OnlineLibrary.items.size >= 15)
+        val siteIds = OnlineLibrary.items.map { it.siteId }
+        assertEquals(siteIds.size, siteIds.toSet().size)
+        val knownIcons = setOf(
+            "book_open", "scroll", "kaaba", "crescent", "people", "tasbih", "mosque",
+            "history", "star8", "sparkle", "quote", "favorite", "lantern"
+        )
+        for (book in OnlineLibrary.items) {
+            assertNotNull("Category ${book.categoryId} for ${book.title.en}", Catalog.categoryById(book.categoryId))
+            assertTrue(book.siteId > 0)
+            assertEquals("https://ketabonline.com/ar/books/${book.siteId}", book.url)
+            for (localized in listOf(book.title, book.author, book.description)) {
+                assertTrue(localized.en.isNotBlank())
+                assertTrue(localized.ar.isNotBlank())
+                assertTrue(TextNormalizer.containsArabic(localized.ar))
+            }
+            assertTrue(book.icon, book.icon in knownIcons)
+            assertTrue(book.palette in 0..7)
+        }
+        for (category in Catalog.categories) {
+            assertTrue(category.id, OnlineLibrary.itemsIn(category.id).isNotEmpty())
+        }
+        assertEquals(Catalog.categories.map { it.id }, OnlineLibrary.categoryIds())
+        for (url in listOf(OnlineLibrary.HOME_URL, OnlineLibrary.QURAN_URL, OnlineLibrary.NARRATORS_URL)) {
+            assertTrue(url, url.startsWith("https://" + OnlineLibrary.SITE_HOST + "/"))
+        }
+        assertTrue(OnlineLibrary.siteName.en.isNotBlank() && TextNormalizer.containsArabic(OnlineLibrary.siteName.ar))
+    }
+
+    @Test
     fun langResolution() {
         assertEquals(Lang.AR, Lang.of("ar"))
         assertEquals(Lang.AR, Lang.of("ar-EG"))

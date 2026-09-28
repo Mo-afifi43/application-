@@ -43,6 +43,11 @@
             android:windowSoftInputMode="adjustResize|stateVisible" />
 
         <activity
+            android:name=".ui.ClassicalLibraryActivity"
+            android:exported="false"
+            android:parentActivityName=".ui.MainActivity" />
+
+        <activity
             android:name=".ui.AboutActivity"
             android:exported="false"
             android:parentActivityName=".ui.MainActivity" />

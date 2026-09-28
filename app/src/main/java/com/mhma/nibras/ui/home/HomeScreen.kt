@@ -22,6 +22,7 @@ import com.mhma.nibras.core.onClickDebounced
 import com.mhma.nibras.core.padSystemBars
 import com.mhma.nibras.ui.Binders
 import com.mhma.nibras.ui.BookDetailActivity
+import com.mhma.nibras.ui.ClassicalLibraryActivity
 import com.mhma.nibras.ui.Icons
 import com.mhma.nibras.ui.MainActivity
 import com.mhma.nibras.ui.ReaderActivity
@@ -56,6 +57,7 @@ class HomeScreen(activity: MainActivity, container: ViewGroup) : Screen(activity
         bindFeatured()
         bindLectures()
         root.findViewById<View>(R.id.home_featured_all).onClickDebounced { activity.openLibrary(null) }
+        root.findViewById<View>(R.id.home_classical).onClickDebounced { ClassicalLibraryActivity.start(activity) }
         root.findViewById<View>(R.id.home_lectures_all).onClickDebounced { activity.openLectures() }
     }
 

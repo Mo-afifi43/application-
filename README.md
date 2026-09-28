@@ -20,6 +20,7 @@ Built by **M.H.M.A**.
 - **Beautiful reader** with adjustable text size, light / sepia / dark page colours, chapter navigation, a contents panel, reading progress and "keep screen on". Arabic is set in *Amiri*, English in *Lora*.
 - **Full-text search** across every book in either language, with Arabic diacritics and letter variants normalised.
 - **Home** with the Hijri date, a daily reminder from the Qur'an and Sunnah, "continue reading", categories and featured books.
+- **Classical library**: twenty of the great works of the scholars — Sahih al-Bukhari, Sahih Muslim, Riyad al-Salihin, Fath al-Bari, Tafsir Ibn Kathir, Tafsir al-Sa'di, Zad al-Ma'ad, Siyar A'lam al-Nubala', al-Bidayah wa al-Nihayah and more — each linking to its full, free text on [Jami' al-Kutub al-Islamiyya](https://ketabonline.com), with quick links to the site's Qur'an and hadith-narrator sections.
 - **Lectures**: curated official YouTube channels of well-known scholars in English and Arabic, plus Qur'an recitation.
 - **Bookmarks**, per-book reading language, reading statistics and progress reset.
 - **Arabic and English interface** with full right-to-left support; switch language or appearance (light / dark / system) at any time.
@@ -91,4 +92,8 @@ Open the project in Android Studio (Ladybug or newer) and press Run, or from the
 
 The bundled typefaces are used under the SIL Open Font License 1.1: **Amiri** (Khaled Hosny and the Amiri Project Authors), **IBM Plex Sans Arabic** (IBM Corp.) and **Lora** (Cyreal). The licence texts are included in the app under *More → Open-source licences*.
 
-The classical texts (the Forty Hadith, Qur'anic verses, authentic hadith and supplications) are quoted from their sources; the explanations, stories and guides are original writing for this app. If you find a mistake, please report it so it can be corrected — knowledge is a trust.
+## Sources
+
+The classical texts (the Forty Hadith, Qur'anic verses, authentic hadith and supplications) are quoted from their sources; the explanations, stories and guides are original writing for this app. The text of the Forty Hadith was checked, hadith by hadith, against the digitised edition on [Jami' al-Kutub al-Islamiyya (ketabonline.com)](https://ketabonline.com), which also hosts every work in the app's classical library. Each entry in `OnlineLibrary.kt` records the site's book id, and the unit tests verify that the ids are unique and every category of the catalogue has at least one work.
+
+If you find a mistake, please report it so it can be corrected — knowledge is a trust.
